@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    /> -->
+    <title>Document</title>
+    <style>
+      /* Reset CSS cho tất cả các phần tử */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Đặt màu nền và màu chữ cho bảng */
+      .bg-dark {
+        background-color: #212529;
+      }
+      .text-white {
+        color: #fff;
+      }
+
+      /* Đặt font và kích thước chữ cho bảng */
+      .table {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+      }
+
+      /* Áp dụng font-weight "bold" cho các thẻ <th> */
+      .table th {
+        font-weight: bold;
+      }
+
+      /* Đặt border cho bảng */
+      .table {
+        border-collapse: collapse;
+      }
+
+      /* Đặt border và padding cho thẻ <th> và <td> */
+      .table th,
+      .table td {
+        border: 1px solid #fff;
+        padding: 8px;
+      }
+
+      /* Đặt padding cho thẻ <th> trong thead */
+      .table thead th {
+        padding: 8px;
+      }
+
+      /* Bao bọc bảng trong một container để sử dụng flexbox */
+      .table-container {
+        display: flex;
+        justify-content: center; /* Căn giữa bảng trong màn hình */
+      }
+
+      /* Áp dụng chiều rộng 80% cho bảng */
+      .table {
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table-container">
+      <table class="table text-white table-bordered bg-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>Table 2</h2>
+  </body>
+</html>

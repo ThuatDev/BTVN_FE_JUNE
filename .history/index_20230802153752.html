@@ -108,28 +108,23 @@
       /* Đặt padding cho thẻ <td> có colspan */
       .table td[colspan] {
         padding: 8px;
-        text-align: center; /* Căn giữa văn bản trong ô có colspan */
       }
 
       /* Đặt padding cho thẻ <th> trong thead */
       .table thead th {
         padding: 8px;
-        text-align: center; /* Căn giữa văn bản trong ô có colspan */
       }
 
       /* Bao bọc bảng trong một container để sử dụng flexbox */
       .table-container {
         display: flex;
-        justify-content: center; /* Căn giữa bảng theo chiều ngang */
-        align-items: center; /* Căn giữa bảng theo chiều dọc */
+
+        align-items: center; Căn giữa bảng theo chiều dọc
       }
 
       /* Áp dụng chiều rộng 80% cho bảng */
       .table {
         width: 80%;
-      }
-      .table-left {
-        text-align: left !important;
       }
     </style>
   </head>
@@ -186,19 +181,19 @@
           <td>Header 2</td>
           <td>Header 3</td>
         </tr>
-        <tr class="table-left">
+        <tr>
           <th scope="row">Data để map</th>
-          <td colspan="1" class="table-left">Data để map</td>
+          <td colspan="1">Data để map</td>
           <td>Data để map</td>
           <td>Data để map</td>
         </tr>
-        <tr class="table-left">
+        <tr>
           <th scope="row">Data để map</th>
-          <td colspan="1" class="table-left">Data để map</td>
+          <td colspan="1">Data để map</td>
           <td>Data để map</td>
           <td>Data để map</td>
         </tr>
-        <tr class="table-left">
+        <tr>
           <th scope="row">Sum data</th>
           <td colspan="12" class="text-center">Cột Sum: N/A</td>
         </tr>

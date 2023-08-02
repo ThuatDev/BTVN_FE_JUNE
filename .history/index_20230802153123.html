@@ -62,7 +62,6 @@
       /* Áp dụng chiều rộng 80% cho bảng */
       .table {
         width: 80%;
-        margin: 0 auto;
       }
       /* css bang 2  */
 
@@ -103,6 +102,7 @@
       .table td[colspan],
       .table td[rowspan] {
         padding: 8px;
+        text-align: center; /* Căn giữa văn bản trong ô có colspan */
       }
 
       /* Đặt padding cho thẻ <td> có colspan */
@@ -122,14 +122,12 @@
         display: flex;
         justify-content: center; /* Căn giữa bảng theo chiều ngang */
         align-items: center; /* Căn giữa bảng theo chiều dọc */
+        height: 100vh; /* Chiều cao bằng 100% chiều cao của màn hình */
       }
 
       /* Áp dụng chiều rộng 80% cho bảng */
       .table {
         width: 80%;
-      }
-      .table-left {
-        text-align: left !important;
       }
     </style>
   </head>
@@ -167,42 +165,46 @@
     </div>
     <br />
     <br />
-    <h2 style="text-align: center">Table 2</h2>
-    <table class="table text-white table-bordered bg-success">
-      <thead>
-        <tr>
-          <th scope="col" colspan="12" class="text-center">
-            Table 1 : Ô này dài hết nha
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row" rowspan="2">Ô này chiếm 2 dòng</th>
-          <td colspan="3" class="text-center">Ô này chứa data header group</td>
-        </tr>
-        <tr>
-          <td>Header 1</td>
-          <td>Header 2</td>
-          <td>Header 3</td>
-        </tr>
-        <tr class="table-left">
-          <th scope="row">Data để map</th>
-          <td colspan="1" class="table-left">Data để map</td>
-          <td>Data để map</td>
-          <td>Data để map</td>
-        </tr>
-        <tr class="table-left">
-          <th scope="row">Data để map</th>
-          <td colspan="1" class="table-left">Data để map</td>
-          <td>Data để map</td>
-          <td>Data để map</td>
-        </tr>
-        <tr class="table-left">
-          <th scope="row">Sum data</th>
-          <td colspan="12" class="text-center">Cột Sum: N/A</td>
-        </tr>
-      </tbody>
-    </table>
+    <h2>Table 2</h2>
+    <div class="table-container-2">
+      <table class="table text-white table-bordered bg-success">
+        <thead>
+          <tr>
+            <th scope="col" colspan="12" class="text-center">
+              Table 1 : Ô này dài hết nha
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" rowspan="2">Ô này chiếm 2 dòng</th>
+            <td colspan="3" class="text-center">
+              Ô này chứa data header group
+            </td>
+          </tr>
+          <tr>
+            <td>Header 1</td>
+            <td>Header 2</td>
+            <td>Header 3</td>
+          </tr>
+          <tr>
+            <th scope="row">Data để map</th>
+            <td colspan="1">Data để map</td>
+            <td>Data để map</td>
+            <td>Data để map</td>
+          </tr>
+          <tr>
+            <th scope="row">Data để map</th>
+            <td colspan="1">Data để map</td>
+            <td>Data để map</td>
+            <td>Data để map</td>
+          </tr>
+          <tr>
+            <th scope="row">Sum data</th>
+            <td colspan="12" class="text-center">Cột Sum: N/A</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>

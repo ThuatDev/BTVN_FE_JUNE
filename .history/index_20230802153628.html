@@ -17,6 +17,7 @@
       }
 
       /* Đặt màu nền và màu chữ cho bảng */
+      /* Đặt màu nền và màu chữ cho bảng */
       .bg-dark {
         background-color: #212529;
       }
@@ -64,6 +65,14 @@
         width: 80%;
         margin: 0 auto;
       }
+
+      /* Đặt chữ đầu hàng khi có colspan */
+      .table td[colspan],
+      .table th[colspan] {
+        vertical-align: top;
+        text-align: center;
+      }
+
       /* css bang 2  */
 
       .bg-success {
@@ -103,6 +112,7 @@
       .table td[colspan],
       .table td[rowspan] {
         padding: 8px;
+        text-align: center; /* Căn giữa văn bản trong ô có colspan */
       }
 
       /* Đặt padding cho thẻ <td> có colspan */
@@ -127,9 +137,6 @@
       /* Áp dụng chiều rộng 80% cho bảng */
       .table {
         width: 80%;
-      }
-      .table-left {
-        text-align: left !important;
       }
     </style>
   </head>
@@ -186,19 +193,19 @@
           <td>Header 2</td>
           <td>Header 3</td>
         </tr>
-        <tr class="table-left">
+        <tr>
           <th scope="row">Data để map</th>
-          <td colspan="1" class="table-left">Data để map</td>
+          <td colspan="1">Data để map</td>
           <td>Data để map</td>
           <td>Data để map</td>
         </tr>
-        <tr class="table-left">
+        <tr>
           <th scope="row">Data để map</th>
-          <td colspan="1" class="table-left">Data để map</td>
+          <td colspan="1">Data để map</td>
           <td>Data để map</td>
           <td>Data để map</td>
         </tr>
-        <tr class="table-left">
+        <tr>
           <th scope="row">Sum data</th>
           <td colspan="12" class="text-center">Cột Sum: N/A</td>
         </tr>
