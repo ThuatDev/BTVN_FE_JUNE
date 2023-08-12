@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container-nav {
+  max-width: 1280px;
+  background-color: #0d6efd;
+  margin: 0 auto;
+}
