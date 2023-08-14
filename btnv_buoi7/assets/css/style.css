@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+}
+body *:not(i) {
+  font-family: "Roboto";
+  color: #212529;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+a:hover {
+  /* hiện lên chữ màu xanh */
+  color: #007bff;
+}
+
+footer {
+  background-color: rgb(194, 230, 246);
+  margin-top: 275px;
+  color: #fff;
+  padding: 20px 0;
+  min-height: 435px;
+}
+body .container {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+.row {
+  /*
+    đại diện cho 1 flex box mà cho phép các phần từ trong nó xuống dòng
+  */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  /* Dùng hệ lưới trục 12 cột nên lấy flex-parent / 12 */
+  width: calc(1 * 100% / 12);
+  box-sizing: border-box;
+  padding: 12px;
+}
+.col-2 {
+  /* Dùng hệ lưới trục 12 cột nên lấy flex-parent / 12 */
+  width: calc(2 * 100% / 12);
+  box-sizing: border-box;
+  padding: 12px;
+}
+.col-3 {
+  /* Dùng hệ lưới trục 12 cột nên lấy flex-parent / 12 */
+  width: calc(3 * 100% / 12);
+  box-sizing: border-box;
+  padding: 12px;
+  /* border: 1px solid blue !important; */
+}
+.col-4 {
+  /* Dùng hệ lưới trục 12 cột nên lấy flex-parent / 12 */
+  width: calc(4 * 100% / 12);
+  box-sizing: border-box;
+  padding: 12px;
+}
+.col-5 {
+  /* Dùng hệ lưới trục 12 cột nên lấy flex-parent / 12 */
+  width: calc(5 * 100% / 12);
+  box-sizing: border-box;
+  padding: 12px;
+}
+.col-6 {
+  /* Dùng hệ lưới trục 12 cột nên lấy flex-parent / 12 */
+  width: calc(6 * 100% / 12);
+  box-sizing: border-box;
+  padding: 12px;
+}
+.col-12 {
+  /* Dùng hệ lưới trục 12 cột nên lấy flex-parent / 12 */
+  width: calc(12 * 100% / 12);
+  box-sizing: border-box;
+  padding: 12px;
+}
+.footer-main__logo img {
+  width: auto;
+  height: 65px;
+}
+.ft-block-title {
+  font-size: 16px;
+  color: #212529;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.pb-1 {
+  padding-bottom: 1rem;
+}
+.mt-4 {
+  margin-top: 1.5rem;
+}
+.font-weight-bold {
+  font-weight: 600;
+}
+.company-info {
+  line-height: 35px;
+}
+
+/* css img bocongthuong  */
+.space {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.d-block {
+  line-height: 27px;
+  padding-block-end: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.connect-youtube {
+  width: 28px;
+  margin-right: 1rem;
+  display: block;
+}
+.connect-facebook {
+  width: 20px;
+  display: block;
+}
+.logo-fb-youtube {
+  display: flex;
+  align-items: center;
+}
+.download-app {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.qr-app img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.app-links img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.font-size-10 {
+  font-size: 10px;
+  margin: 0.5rem 0;
+}
+/* responsive  mobi  */
+@media (max-width: 767px) {
+  /* .row .col-6 {
+    width: calc(1 * 100% / 12);
+
+  } */
+  .row {
+    flex-direction: column;
+  }
+  .row .col-6 {
+    width: 100%;
+  }
+  .row .col-2 {
+    width: 100%;
+    text-align: center;
+  }
+  .row .logo-fb-youtube {
+    justify-content: center;
+  }
+  .row .download-app {
+    justify-content: center;
+  }
+}
