@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:not(i) {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  /* background-color: aliceblue; */
+}
+.app-header {
+  margin-top: 3rem;
+  box-shadow: 0px -10px 10px -10px rgba(0, 0, 0, 0.1);
+}
+.header-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.header-container .menu {
+  display: flex;
+  height: 80px;
+
+  width: 100%;
+  justify-content: space-between;
+}
+.header-container .menu .menu__logo {
+  height: 80px;
+}
+
+.header-container .menu img {
+  height: 100%;
+
+  width: auto;
+  object-fit: cover;
+}
+.sub-item {
+  position: relative;
+}
+.download-popover-customize .triangle {
+  position: absolute;
+  top: -4px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #ffffff;
+  border-right: 10px solid transparent;
+  transform: rotate(45deg);
+}
+
+.download-popover-customize {
+  position: absolute;
+  top: 115%;
+  width: 260px;
+  right: 6px;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0px -10px 20px -10px rgba(0, 0, 0, 0.3);
+
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem 0;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
+  z-index: 9999; /* giá trị z-index có thể thay đổi tùy vào thiết kế của bạn */
+  display: none;
+  transition: all 0.25s ease;
+}
+.download-popover-customize img:nth-child(2) {
+  margin: 1rem 0 1.5rem 0; /* ảnh thứ nhất */
+}
+.download-popover-customize em {
+  color: #333;
+  font-weight: 500;
+  font-size: 13px;
+}
+.header-container .menu .menu-content .menu-content__list {
+  display: flex;
+  align-items: center;
+  line-height: 80px;
+}
+.header-container .menu .menu-content .menu-content__list li {
+  padding: 0 2rem;
+}
+.header-container .menu .menu-content .menu-content__list li a {
+  /* font-weight: 500; */
+  font-size: 1rem;
+}
+.active {
+  color: #00c2c5;
+  font-weight: 700;
+}
+.active:hover {
+  color: #000000;
+}
+/* .header-container .menu .menu-content .menu-content__list li a:hover {
+  color: #00c2c5;
+} */
+.header-container .menu .menu-content .menu-content__list .login {
+  background-color: rgb(229, 249, 249);
+  padding: 0rem 1.5rem;
+  line-height: 3;
+  border-radius: 12px;
+  margin-left: 1.5rem;
+  border: 1px solid #00c2c5;
+}
+.header-container .menu .menu-content .menu-content__list .login a {
+  color: #00c2c5;
+}
+.header-container .menu .menu-content .menu-content__list .down-load {
+  background-color: #00c2c5;
+  padding: 0rem 1.5rem;
+  line-height: 3;
+  border-radius: 12px;
+  margin-left: 1.5rem;
+}
+.header-container .menu .menu-content .menu-content__list .down-load a {
+  color: #fff;
+}
+/* khi hover vào .header-container .menu .menu-content .menu-content__list .down-load thì hiện lên .download-popover-customize  */
+.header-container
+  .menu
+  .menu-content
+  .menu-content__list
+  .down-load:hover
+  ~ .download-popover-customize {
+  display: block;
+}
+
+.down-load:hover .download-popover-customize {
+  display: block;
+  display: flex;
+  gap: 0.5rem 0;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.5;
+}
+
+/* css navgator  */
+.navigatorSearchBar {
+  width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.navigatorSearchBar__list {
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+  line-height: 52px;
+}
+.navigatorSearchBar-app {
+  background-color: #00c2c5;
+  height: 52px;
+  color: #ffffff;
+}
+.navigatorSearchBar-app a {
+  color: #ffffff;
+  font-weight: 500;
+}
+.navigatorSearchBar__search {
+  position: relative;
+  line-height: 52px;
+}
+
+.navigatorSearchBar__input {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 9px 67px 9px 10px;
+  width: 225px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.navigatorSearchBar__input:focus {
+  border-color: #007bff;
+}
+
+.navigatorSearchBar__icon-container {
+  position: absolute;
+  top: 65%;
+  right: 10px; /* Khoảng cách biểu tượng từ viền phải */
+  transform: translateY(-50%);
+}
+
+.navigatorSearchBar__icon {
+  width: 25px; /* Tùy chỉnh kích thước cho phù hợp */
+  height: 25px; /* Tùy chỉnh kích thước cho phù hợp */
+  cursor: pointer;
+}
+.navigatorSearchBar__input::placeholder {
+  color: #999; /* Màu chữ cho placeholder */
+
+  font-style: italic;
+  font-size: 14px;
+}
+
+.navigatorSearchBar__input:focus::placeholder {
+  color: #fff; /* Khi input được focus, placeholder mất đi */
+  border: none;
+}
